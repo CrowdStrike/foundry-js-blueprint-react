@@ -19,6 +19,7 @@ export default defineConfig([
       json(),
       replace({
         preventAssignment: true,
+        'process.env.NODE_ENV': JSON.stringify('production')
       }),
       babel({
         presets: ["@babel/preset-react"],
