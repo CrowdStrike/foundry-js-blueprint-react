@@ -9,9 +9,6 @@ import { useFalconApiContext, FalconApiContext } from './contexts/falcon-api-con
 import { Home } from './routes/home.js';
 import ReactDOM from 'react-dom/client';
 
-import "@crowdstrike/tailwind-toucan-base/index.css";
-import "@crowdstrike/falcon-shoelace/dist/style.css";
-
 function Root() {
   return (
     <div>
