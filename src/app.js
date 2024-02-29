@@ -4,10 +4,11 @@ import {
   useFalconApiContext,
   FalconApiContext,
 } from "./contexts/falcon-api-context.js";
-import { Home } from "./routes/home";
-import { About } from "./routes/about";
+import { Home } from "./routes/home.js";
+import { About } from "./routes/about.js";
 import ReactDOM from "react-dom/client";
 import { TabNavigation } from "./components/navigation.js";
+
 function Root() {
   return (
     <Routes>
