@@ -11,7 +11,7 @@ React blueprint for Foundry UI application development.
 
 ## UI development
 
-Included in this bluepring are some common css and React components you can use in your app. They're already styled to be consistent with the rest of Falcon and handle light and dark mode for you. 
+Included in this blueprint are some common css and React components you can use in your app. They're already styled to be consistent with the rest of Falcon Console and handle light and dark mode for you.
 
 - [Shoelace](https://shoelace.style/frameworks/react) is already installed and we've also included [shoelace specific Falcon css](https://github.com/CrowdStrike/falcon-shoelace) to make the components provided by Shoelace look consistent with the rest of Falcon.
 
