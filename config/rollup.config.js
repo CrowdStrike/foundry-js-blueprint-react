@@ -11,7 +11,7 @@ export default defineConfig([
   {
     input: ['src/*.html'],
     output: {
-      dir: 'dist',
+      dir: 'src/dist',
       format: "esm",
       sourcemap: false,
     },
