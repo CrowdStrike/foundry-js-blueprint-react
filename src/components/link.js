@@ -5,14 +5,9 @@ import { FalconApiContext } from "../contexts/falcon-api-context.js";
 function Link({ children, useFalconNavigation = false, to }) {
   const { navigation } = useContext(FalconApiContext);
 
-  const navigate = (event) => {
-    event.preventDefault();
-    navigation.navigateTo({path: to});
-  }
-
   if (useFalconNavigation) {
     return (
-      <a onClick={navigate} href={to}>{children}</a>
+      <a onClick={navigation.onClick} href={to}>{children}</a>
     )
   }
 

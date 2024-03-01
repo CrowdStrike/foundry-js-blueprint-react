@@ -50,6 +50,22 @@ Before deploying your Foundry app, you must do a final build of your UI extensio
 
 ## Adding entries to your manifest's `ignored` field
 
-When deploying your app, you only need to include the `dist` directory that includes the static assets for your Extension or Page.  
+When deploying your app, the `dist` directory is required and everything else can be ignored.  
 
-Here's an example of how to set your manifest's [ignore](https://github.com/CrowdStrike/foundry-sample-mitre/blob/main/manifest.yml#L5-L30) field.
+Below are some starter regex patterns you can add to your app's `manifest.yml` file.
+
+```yaml
+ignored:
+    - ui/(extensions|pages)/[^\/]*?/public
+    - ui/(extensions|pages)/[^\/]*?/index.html
+    - ui/(extensions|pages)/[^\/]*?/favicon.ico
+    - ui/(extensions|pages)/.*?/node_modules
+    - ui/(extensions|pages)/.*?/config
+    - ui/(extensions|pages)/.*?/\.gitignore
+    - ui/(extensions|pages)/.*?/package\.json
+    - ui/(extensions|pages)/.*?/tsconfig\.json
+    - ui/(extensions|pages)/.*?/tsconfig\..*\.json
+    - ui/(extensions|pages)/.*?/.*?\.(md|log|lock|cjs)
+```
+
+Here's an example of how to set your manifest's [ignored](https://github.com/CrowdStrike/foundry-sample-mitre/blob/main/manifest.yml#L5-L30) field.
