@@ -7,11 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Use Node 20
+      - name: Use Node 22
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-      - name: Run npm install
-        run: npm install
+          node-version: 22
+          cache: 'npm'
+      - name: Run npm ci
+        run: npm ci
       - name: Build React app
         run: npm run build
