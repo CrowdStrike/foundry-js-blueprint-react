@@ -6,9 +6,9 @@
   "type": "module",
   "directories": {},
   "dependencies": {
-    "@crowdstrike/falcon-shoelace": "^0.2.3",
-    "@crowdstrike/foundry-js": "^0.9.0",
-    "@crowdstrike/tailwind-toucan-base": "^4.2.0",
+    "@crowdstrike/falcon-shoelace": "^0.4.0",
+    "@crowdstrike/foundry-js": "^0.16.0",
+    "@crowdstrike/tailwind-toucan-base": "^5.0.0",
     "@shoelace-style/shoelace": "^2.7.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
