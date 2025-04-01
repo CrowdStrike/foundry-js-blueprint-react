@@ -1,4 +1,4 @@
-import html from '@web/rollup-plugin-html';
+import { rollupPluginHTML as html } from '@web/rollup-plugin-html';
 import { defineConfig } from 'rollup';
 import babel from '@rollup/plugin-babel';
 import nodeResolve from '@rollup/plugin-node-resolve';
