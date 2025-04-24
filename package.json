@@ -10,8 +10,8 @@
     "@crowdstrike/foundry-js": "^0.17.1",
     "@crowdstrike/tailwind-toucan-base": "^5.0.0",
     "@shoelace-style/shoelace": "^2.20.1",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
     "react-router-dom": "7.5.1"
   },
   "devDependencies": {
