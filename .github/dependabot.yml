@@ -5,6 +5,7 @@ updates:
     schedule:
       interval: "weekly"
     groups:
-      patterns:
-        - "react"
-        - "react-dom"
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
