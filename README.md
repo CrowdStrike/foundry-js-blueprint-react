@@ -48,7 +48,9 @@ Before deploying your Foundry app, you must do a final build of your UI extensio
 
 - `npm run build`
 
-## Adding entries to your manifest's `ignored` field
+## App manifest updates
+
+### Add entries to your manifest's `ignored` field
 
 When deploying your app, the `dist` directory is required and everything else can be ignored.  
 
@@ -69,3 +71,14 @@ ignored:
 ```
 
 Here's an example of how to set your manifest's [ignored](https://github.com/CrowdStrike/foundry-sample-mitre/blob/main/manifest.yml#L5-L30) field.
+
+### Update your app's path and entrypoint
+
+When using this React template, you must add `/dist` to the app path and entrypoint in the manifest file.
+
+In the `manifest.yml` file, make the following changes (`extensionName` should be the name of your extension):
+
+- Set `path` to this: `ui/extensions/{extensionName}/src/dist`
+- Set `entrypoint` to this: `ui/extensions/{extensionName}/src/dist/index.html`
+
+Here's an example of how to set your manifest's [path and entrypoint](https://github.com/CrowdStrike/foundry-sample-mitre/blob/main/manifest.yml#L39-L40) fields.
