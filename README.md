@@ -76,7 +76,7 @@ Here's an example of how to set your manifest's [ignored](https://github.com/Cro
 
 When using this React template, you must add `/dist` to the app path and entrypoint in the manifest file.
 
-In the `manifest.yml` file, make the following changes (`extensionName` should be the name of your extension):
+In the `manifest.yml` file, make the following changes (`{extensionName}` should be the name of your extension):
 
 - Set `path` to this: `ui/extensions/{extensionName}/src/dist`
 - Set `entrypoint` to this: `ui/extensions/{extensionName}/src/dist/index.html`
