@@ -4,10 +4,12 @@ React blueprint for Foundry UI application development.
 
 ## Getting started
 
-- `npm install`
-- `npm run watch`
+This project uses [pnpm](https://pnpm.io/) to manage dependencies.  Documentation to install `pnpm` is [here](https://pnpm.io/installation)
 
-`npm run watch` will start [Rollup](https://rollupjs.org/) in watch mode and your application's output will be under `/src/dist`.  The contents of `src/dist` is what will be rendered by Foundry.
+- `pnpm install`
+- `pnpm watch`
+
+`pnpm watch` will start [Vite](https://vite.dev/) in watch mode and your application's output will be under `/src/dist`.  The contents of `src/dist` is what will be rendered by Foundry.
 
 ## UI development
 
@@ -46,7 +48,7 @@ import { Link } from '../components/link';
 
 Before deploying your Foundry app, you must do a final build of your UI extension so the app has access to the latest files in `/src/dist`.  Run the following build command when you're ready to deploy:
 
-- `npm run build`
+- `pnpm build`
 
 ## App manifest updates
 
