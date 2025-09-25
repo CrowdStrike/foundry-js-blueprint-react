@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Link as ReactRouterLink } from "react-router-dom";
-import { FalconApiContext } from "../contexts/falcon-api-context.js";
+import { FalconApiContext } from "../contexts/falcon-api-context";
 
 function Link({
   children,
