@@ -3,11 +3,11 @@ import { HashRouter, Routes, Route, Outlet } from "react-router-dom";
 import {
   useFalconApiContext,
   FalconApiContext,
-} from "./contexts/falcon-api-context.js";
-import { Home } from "./routes/home.js";
-import { About } from "./routes/about.js";
+} from "./contexts/falcon-api-context";
+import { Home } from "./routes/home";
+import { About } from "./routes/about";
 import ReactDOM from "react-dom/client";
-import { TabNavigation } from "./components/navigation.js";
+import { TabNavigation } from "./components/navigation";
 
 function Root() {
   return (
