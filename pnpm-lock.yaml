@@ -21,21 +21,21 @@ importers:
         specifier: 2.20.1
         version: 2.20.1(@floating-ui/utils@0.2.10)
       react:
-        specifier: 19.1.1
-        version: 19.1.1
+        specifier: 19.2.1
+        version: 19.2.1
       react-dom:
-        specifier: 19.1.1
-        version: 19.1.1(react@19.1.1)
+        specifier: 19.2.1
+        version: 19.2.1(react@19.2.1)
       react-router-dom:
         specifier: 7.9.1
-        version: 7.9.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+        version: 7.9.1(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
     devDependencies:
       '@vitejs/plugin-react-swc':
         specifier: 3.11.0
-        version: 3.11.0(vite@7.1.5)
+        version: 3.11.0(vite@7.1.5(yaml@1.10.2))
       vite:
         specifier: 7.1.5
-        version: 7.1.5
+        version: 7.1.5(yaml@1.10.2)
 
 packages:
 
@@ -848,10 +848,10 @@ packages:
     resolution: {integrity: sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==}
     engines: {node: '>=10'}
 
-  react-dom@19.1.1:
-    resolution: {integrity: sha512-Dlq/5LAZgF0Gaz6yiqZCf6VCcZs1ghAJyrsu84Q/GT0gV+mCxbfmKNoGRKBYMJ8IEdGPqu49YWXD02GCknEDkw==}
+  react-dom@19.2.1:
+    resolution: {integrity: sha512-ibrK8llX2a4eOskq1mXKu/TGZj9qzomO+sNfO98M6d9zIPOEhlBkMkBUBLd1vgS0gQsLDBzA+8jJBVXDnfHmJg==}
     peerDependencies:
-      react: ^19.1.1
+      react: ^19.2.1
 
   react-router-dom@7.9.1:
     resolution: {integrity: sha512-U9WBQssBE9B1vmRjo9qTM7YRzfZ3lUxESIZnsf4VjR/lXYz9MHjvOxHzr/aUm4efpktbVOrF09rL/y4VHa8RMw==}
@@ -870,8 +870,8 @@ packages:
       react-dom:
         optional: true
 
-  react@19.1.1:
-    resolution: {integrity: sha512-w8nqGImo45dmMIfljjMwOGtbmC/mk4CMYhWIicdSflH91J9TyCyczcPFXJzrZ/ZXcgGRFeP6BU0BEJTw6tZdfQ==}
+  react@19.2.1:
+    resolution: {integrity: sha512-DGrYcCWK7tvYMnWh79yrPHt+vdx9tY+1gPZa7nJQtO/p8bLTDaHp4dzwEhQB7pZ4Xe3ok4XKuEPrVuc+wlpkmw==}
     engines: {node: '>=0.10.0'}
 
   readdirp@3.6.0:
@@ -908,8 +908,8 @@ packages:
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
 
-  scheduler@0.26.0:
-    resolution: {integrity: sha512-NlHwttCI/l5gCPR3D1nNXtWABUmBwvZpEQiD4IXSbIDq8BzLIK/7Ir5gTFSGZDUu37K5cMNp0hFtzO38sC7gWA==}
+  scheduler@0.27.0:
+    resolution: {integrity: sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==}
 
   set-cookie-parser@2.7.1:
     resolution: {integrity: sha512-IOc8uWeOZgnb3ptbCURJWNjWUPcO3ZnTTdzsurqERrP6nPyv+paC55vJM0LpOlT2ne+Ix+9+CRG1MNLlyZ4GjQ==}
@@ -1292,11 +1292,11 @@ snapshots:
 
   '@types/trusted-types@2.0.7': {}
 
-  '@vitejs/plugin-react-swc@3.11.0(vite@7.1.5)':
+  '@vitejs/plugin-react-swc@3.11.0(vite@7.1.5(yaml@1.10.2))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.27
       '@swc/core': 1.13.5
-      vite: 7.1.5
+      vite: 7.1.5(yaml@1.10.2)
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -1684,26 +1684,26 @@ snapshots:
 
   quick-lru@5.1.1: {}
 
-  react-dom@19.1.1(react@19.1.1):
+  react-dom@19.2.1(react@19.2.1):
     dependencies:
-      react: 19.1.1
-      scheduler: 0.26.0
+      react: 19.2.1
+      scheduler: 0.27.0
 
-  react-router-dom@7.9.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
+  react-router-dom@7.9.1(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
     dependencies:
-      react: 19.1.1
-      react-dom: 19.1.1(react@19.1.1)
-      react-router: 7.9.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      react: 19.2.1
+      react-dom: 19.2.1(react@19.2.1)
+      react-router: 7.9.1(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
 
-  react-router@7.9.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
+  react-router@7.9.1(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
     dependencies:
       cookie: 1.0.2
-      react: 19.1.1
+      react: 19.2.1
       set-cookie-parser: 2.7.1
     optionalDependencies:
-      react-dom: 19.1.1(react@19.1.1)
+      react-dom: 19.2.1(react@19.2.1)
 
-  react@19.1.1: {}
+  react@19.2.1: {}
 
   readdirp@3.6.0:
     dependencies:
@@ -1759,7 +1759,7 @@ snapshots:
     dependencies:
       queue-microtask: 1.2.3
 
-  scheduler@0.26.0: {}
+  scheduler@0.27.0: {}
 
   set-cookie-parser@2.7.1: {}
 
@@ -1832,7 +1832,7 @@ snapshots:
 
   uuid@11.1.0: {}
 
-  vite@7.1.5:
+  vite@7.1.5(yaml@1.10.2):
     dependencies:
       esbuild: 0.25.9
       fdir: 6.5.0(picomatch@4.0.3)
@@ -1842,6 +1842,7 @@ snapshots:
       tinyglobby: 0.2.15
     optionalDependencies:
       fsevents: 2.3.3
+      yaml: 1.10.2
 
   wrappy@1.0.2: {}
 
