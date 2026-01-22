@@ -12,8 +12,8 @@ importers:
         specifier: 0.4.0
         version: 0.4.0
       '@crowdstrike/foundry-js':
-        specifier: 0.19.0
-        version: 0.19.0
+        specifier: 0.20.0
+        version: 0.20.0
       '@crowdstrike/tailwind-toucan-base':
         specifier: 5.0.0
         version: 5.0.0(postcss@8.5.6)
@@ -50,8 +50,8 @@ packages:
   '@crowdstrike/falcon-shoelace@0.4.0':
     resolution: {integrity: sha512-QS2tlNss+5v/kmf9RtRXtW6SZJOrrVn3WWCVvEr7M6712RFIChqTZxiSv5oI6iw7rBzFRXxDUAyeyQzQF9XliA==}
 
-  '@crowdstrike/foundry-js@0.19.0':
-    resolution: {integrity: sha512-x6LOhX8jlZ9xLPTnM6sx65wwWNa34jac1gtyCQASuG9ZjaHkoUjHAPcgSUPvAkGGrFXklK4cz0ZuzxvoXOLIpA==}
+  '@crowdstrike/foundry-js@0.20.0':
+    resolution: {integrity: sha512-GINw0WJqw1lbuOZIizOUpQBYuQ5DXMoaQQSmm2PwoDOfyR3k2//Sw5jlw7LEjQk1y6/L1JoXgf9/GoJaiyi2Pw==}
     engines: {node: '>=22'}
 
   '@crowdstrike/tailwind-toucan-base@5.0.0':
@@ -1026,7 +1026,7 @@ snapshots:
 
   '@crowdstrike/falcon-shoelace@0.4.0': {}
 
-  '@crowdstrike/foundry-js@0.19.0':
+  '@crowdstrike/foundry-js@0.20.0':
     dependencies:
       emittery: 1.2.0
       typescript-memoize: 1.1.1
