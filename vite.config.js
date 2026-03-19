@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react-swc'
 const noAttr = () => ({
   name: 'no-attribute',
   transformIndexHtml(html) {
-    return html.replace(/ crossorigin/g, '')
+    return html.replace(/ crossorigin(?:="[^"]*")?/g, '')
   }
 })
 
