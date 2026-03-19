@@ -21,27 +21,28 @@ Included in this blueprint are some common css and React components you can use 
 
 ## Routing
 
-This blueprint provides a [Link](/src/components/link.js) component to help with routing in your Extension or Page and within Falcon Console.
+This blueprint provides a [Link](/src/components/link.jsx) component to help with routing in your Extension or Page and within Falcon Console.
 
-The `<Link>` component accepts two props:
+The `<Link>` component accepts these props:
 
 - `to` - the path to navigate to
 - `useFalconNavigation` - a boolean value indicating whether or not a link click will update the Falcon Console url.  Defaults to `false`
+- `openInNewTab` - a boolean value indicating whether the link should open in a new tab.  Defaults to `false`
 
 Setting `useFalconNavigation` to `true` will send the user to a new location within Falcon Console (this changes the Falcon Console url in the user's browser)
 
 By default `useFalconNavigation` is set to `false` and React Router (included in this blueprint) will handle user navigation and UI changes within your app.
 
-Usage of the `<Link>` component can be seen in the [home](/src/routes/home.js) and [navigation](/src/components/navigation.js) components.
+Usage of the `<Link>` component can be seen in the [home](/src/routes/home.jsx) and [navigation](/src/components/navigation.jsx) components.
 
-```js
+```jsx
 import { Link } from '../components/link';
 
-// navigates to https://falcon.crowdstrike.com/crowdscore
-<Link useFalconNavigation={true} to="/crowdscore">Crowdscore</Link>
+// navigates to https://falcon.crowdstrike.com/activity
+<Link useFalconNavigation={true} to="/activity">Activity Dashboard</Link>
 
-// navigates to an /about route within your Extension or Page 
-<Link to="/about">Crowdscore</Link>
+// navigates to an /about route within your Extension or Page
+<Link to="/about">About</Link>
 ```
 
 ## Building your app

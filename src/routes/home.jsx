@@ -8,7 +8,7 @@ function Home() {
   return (
     <div className="mt-4 space-y-8">
        <p className="text-neutral"> 👋 Hi {falcon.data.user.username}</p>
-       <Link useFalconNavigation={true} to="/crowdscore">Crowdscore</Link>
+       <Link useFalconNavigation={true} to="/activity">Activity Dashboard</Link>
     </div>
   );
 }
