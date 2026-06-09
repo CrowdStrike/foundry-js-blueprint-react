@@ -6,7 +6,7 @@ const FalconApiContext = createContext(null);
 function useFalconApiContext() {
   const [isInitialized, setIsInitialized] = useState(false);
   const falcon = useMemo(() => new FalconApi(), []);
-  const navigation = useMemo(() => falcon.isConnected ? falcon.navigation : undefined, [falcon.isConnected]);
+  const navigation = useMemo(() => isInitialized ? falcon.navigation : undefined, [isInitialized]);
 
   useEffect(() => {
     (async () => {
